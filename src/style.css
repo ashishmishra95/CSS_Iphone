@@ -1,0 +1,88 @@
+:root{
+    --bg-color: rgb(20, 33, 61);
+    --bg-phone-body-color: #011627;
+    --bg-phone-inner-color:#777777;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10;
+    max-viewport: 100vh;
+    background:var(--bg-color);
+    
+}
+.phone-body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    width:350px;
+    height:700px;
+    border:2px solid #adb5bd;
+    border-radius: 30px;
+    background:var(--bg-phone-body-color);
+}
+.phone-inner{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    width:95%;
+    height:85%;
+    background: var(--bg-phone-inner-color);
+
+}
+/*Phone front-sensor*/
+.phone-body:before{
+  content:'';
+  position:absolute;
+  width:15px;
+  height:10px;
+  top:5px;
+  border-radius:50%;
+  background-color:#3f3f44;
+  
+  
+}
+/*Phone front-speaker*/
+.phone-inner:before{
+  content:'';
+  position:absolute;
+  width:65px;
+  height:6px;
+  top: -30px;
+  border-radius: 20px;
+  background-color: #3f3f44;
+}
+.phone-body{
+  box-shadow: 1px 1px 3px  #adb5bd;
+}
+
+/*Home button*/
+.phone-inner:after{
+  content: '';
+  position:absolute;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background: var(#fff3b0);
+  bottom:-47px;
+  box-shadow: 1px 1px 3px silver;
+ 
+}
+/*Front-camera*/
+.phone-body:after{
+  content:'';
+  position:absolute;
+  left:110px;
+  top: 18px;
+  width:18px;
+  height:15px;
+  border-radius: 50%;
+  background-color:#3f3f44;
+  
+}
+
+
